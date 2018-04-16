@@ -2,6 +2,17 @@ body {
     background-color: #ddd;
 }
 
-.red {
-    background-color: red;
+section {
+    margin-bottom: 1.5em;
+}
+
+header {
+    background-color: #888;
+    padding: 0.5em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+main {
+    width: 90%;
+    margin: auto;
 }

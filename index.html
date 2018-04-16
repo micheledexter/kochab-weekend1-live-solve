@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="script.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
     <title>Monthly Salary Calculator</title>
 </head>
 <body>
@@ -25,8 +28,8 @@
         </section>
         <section>
             <h2>Employees</h2>
-            <table>
-                <thead>
+            <table class="table table-striped">
+                <thead class="thead-light">
                     <tr>
                         <th>First Name</th>
                         <th>Last Name</th>
@@ -41,7 +44,7 @@
                 </tbody>
                 <tfoot id="out-monthly">
                     <tr>
-                        <td colspan="4">Total Monthly Cost: </td>
+                        <td colspan="4" class="text-right">Total Monthly Cost: </td>
                         <td colspan="2" id="out-monthly-cost"></td>
                     </tr>
                 </tfoot>

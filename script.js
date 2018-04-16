@@ -34,10 +34,11 @@ function deleteEmployee() {
 function updateTotalMonthlyCost() {
 	// Style the footer row if the cost is above limit
 	const monthlyCost = calculateTotalMonthlyCost();
+	// Using Bootstrap to make the row red
 	if (monthlyCost > MONTHLY_CONST_CAP) {
-		$('tfoot tr').addClass('red');
+		$('tfoot tr').addClass('table-danger');
 	} else {
-		$('tfoot tr').removeClass('red');
+		$('tfoot tr').removeClass('table-danger');
 	}
 	$('#out-monthly-cost').text(monthlyCost);
 }
