@@ -1,6 +1,7 @@
 console.log('js');
 
 const employeeList = [];
+const MONTHLY_CONST_CAP = 20000;
 
 $(document).ready(readyNow);
 
@@ -36,7 +37,15 @@ function addEmployee() {
 
 	// Update the DOM to show employee
 	$('#out-employees').append(createEmployeeHtml(employee));
-	$('#out-monthly-cost').text(calculateTotalMonthlyCost());
+
+	// Style the footer row if the cost is above limit
+	const monthlyCost = calculateTotalMonthlyCost();
+	if (monthlyCost > MONTHLY_CONST_CAP) {
+		$('tfoot tr').addClass('red');
+	} else {
+		$('tfoot tr').removeClass('red');
+	}
+	$('#out-monthly-cost').text(monthlyCost);
 }
 
 function calculateTotalMonthlyCost() {
