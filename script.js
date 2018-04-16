@@ -42,12 +42,14 @@ function updateTotalMonthlyCost() {
 	$('#out-monthly-cost').text(monthlyCost);
 }
 
-function Employee (first, last, id, title, salary) {
-	this.firstName = first;
-	this.lastName = last;
-	this.employeeID = id;
-	this.title = title;
-	this.annualSalary = parseInt(salary);
+class Employee {
+	constructor (first, last, id, title, salary) {
+		this.firstName = first;
+		this.lastName = last;
+		this.employeeID = id;
+		this.title = title;
+		this.annualSalary = parseInt(salary);
+	}
 }
 
 function addEmployee() {
