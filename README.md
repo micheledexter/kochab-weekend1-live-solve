@@ -11,7 +11,7 @@ Create an application that records employee salaries and adds salaries up to rep
 - [X] Add the employee to a table
 - [X] If monthly cost was above limit $20,000, change color to red
 - [X] Add a delete button to remove employee
-- [ ] Pretty up the styling
+- [X] Pretty up the styling
 - [X] Create an Employee class
 - [X] Update monthly salary total when employee is deleted
-- [ ] Change "form" to a real form
+- [X] Change "form" to a real form
